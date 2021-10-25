@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { useQuery } from ' @apollo/react-hooks';
+import { useQuery } from '@apollo/react-hooks';
 import Cart from '../components/Cart';
 import { useDispatch, useSelector } from 'react-redux';
 import {
@@ -43,15 +43,15 @@ function Detail() {
         }
     }, [products, data, loading, dispatch, id]);
     const addToCart = () => {
-        const itemICart = cart.find((cartItem) => cartItem._id == id);
-        if (itemICart) {
+        const itemInCart = cart.find((cartItem) => cartItem._id == id);
+        if (itemInCart) {
             dispatch({
                 type: UPDATE_CART_QUANTITY,
                 _id: id,
                 purchaseQuantity: parseInt(itemInCart.purchaseQuantity) + 1
             });
             idbPromise('cart', 'put', {
-                ...itemICart,
+                ...itemInCart,
                 purchaseQuantity: parseInt(itemInCart.purchaseQuantity) + 1
             });
         } else {
