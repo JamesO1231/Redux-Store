@@ -37,5 +37,13 @@ db.once('open', async () => {
             price: 6.91,
             quantity: 70
         },
+        { 
+            name: 'Kitchen towels',
+            description: 'Stylish floral towels for your kitchen',
+            image: '',
+            category: categories[1]._id,
+            price: 8.34,
+            quantity: 50
+        },
     ])
 })
