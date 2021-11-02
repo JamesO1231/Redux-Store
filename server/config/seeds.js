@@ -109,5 +109,19 @@ db.once('open', async () => {
             price: 15.00,
             quantity: 10
         },
-    ])
+    ]);
+    console.log('products seeded');
+
+    await User.deleteMany();
+    await User.create({
+        firstName: 'Bilbo',
+        lastName: 'Baggins',
+        email: 'bilbo@baggins.com',
+        password: 'password1234',
+        orders: [
+            {
+                products: [products[4],_id, products[3]._id]
+            }
+        ],
+    });
 })
