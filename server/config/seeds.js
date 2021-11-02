@@ -124,4 +124,12 @@ db.once('open', async () => {
             }
         ],
     });
-})
+    await User.create({
+        firstName: 'Frodo',
+        lastName: 'Baggins',
+        email: 'frodo@thering.com',
+        password: 'onering1234',
+    });
+    console.log('users seeded');
+    process.exit();
+});
