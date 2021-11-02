@@ -52,7 +52,7 @@ db.once('open', async () => {
             category: categories[2]._id,
             price: 600.00,
             quantity: 20
-        }
+        },
         {
             name: 'Monitor',
             description: '27inch curved monitor',
@@ -60,7 +60,7 @@ db.once('open', async () => {
             category: categories[2]._id,
             price: 200.00,
             quantity: 10
-        }
+        },
         {
             name: 'Tommy Boy',
             description: 'Slapstick comedy with a heart felt ending',
@@ -68,7 +68,7 @@ db.once('open', async () => {
             category: categories[3]._id,
             price: 12.00,
             quantity: 5
-        }
+        },
         {
             name: 'Lord of the Rings Trilogy',
             description: 'Fantasy masterpiece',
@@ -76,6 +76,38 @@ db.once('open', async () => {
             category: categories[3]._id,
             price: 1000.00,
             quantity: 500
-        }
+        },
+        {
+            name: 'The Hobbit',
+            description: 'Fantasy masterpiece',
+            image: '',
+            category: categories[4]._id,
+            price: 100000.00,
+            quantity: 1000
+        },
+        {
+            name: 'Feed',
+            description: 'Future thriller',
+            image: '',
+            category: categories[4]._id,
+            price: 18.00,
+            quantity: 10
+        },
+        {
+            name: 'Mario Cart Hot wheels Track',
+            description: 'Fun race track for kids 4 and older',
+            image: '',
+            category: categories[5]._id,
+            price: 50.00,
+            quantity: 10
+        },
+        {
+            name: 'Light Saber',
+            description: 'Light up sword fighting toy',
+            image: '',
+            category: categories[5]._id,
+            price: 15.00,
+            quantity: 10
+        },
     ])
 })
