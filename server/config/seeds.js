@@ -45,5 +45,21 @@ db.once('open', async () => {
             price: 8.34,
             quantity: 50
         },
+        {
+            name: 'Laptop',
+            description: 'Two in one laptop and tablet',
+            image: '',
+            category: categories[2]._id,
+            price: 600.00,
+            quantity: 20
+        }
+        {
+            name: 'Monitor',
+            description: '27inch curved monitor',
+            image: '',
+            category: categories[2]._id,
+            price: 200.00,
+            quantity: 10
+        }
     ])
 })
