@@ -61,5 +61,21 @@ db.once('open', async () => {
             price: 200.00,
             quantity: 10
         }
+        {
+            name: 'Tommy Boy',
+            description: 'Slapstick comedy with a heart felt ending',
+            image: '',
+            category: categories[3]._id,
+            price: 12.00,
+            quantity: 5
+        }
+        {
+            name: 'Lord of the Rings Trilogy',
+            description: 'Fantasy masterpiece',
+            image: '',
+            category: categories[3]._id,
+            price: 1000.00,
+            quantity: 500
+        }
     ])
 })
